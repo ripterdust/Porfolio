@@ -1,24 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Spartan:400,500,700&display=swap');
 :root{
-    --primary-color: #4458dc;
-    --primary-color2: #854fee;
-    --title-color: #141313;
-    --text-color: #777777;  
-    --border-color: #201f1f17;  
-    --gradient-color: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
-    --shadow-color:  0px 10px 30px rgba(118, 85, 225, 0.3);
-    --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
-   
-
+    /* Colors */
+    --primaryColor: #6C63FF;
     /* font family variables. */ 
-    --spartan: 'Spartan', sans-serif;
+    --font: 'Roboto', sans-serif;;
 } 
 
 /* General settings */
-@import url('https://fonts.googleapis.com/css?family=Spartan:400,500,700&display=swap');
 *{
     margin: 0;
     padding: 0;
-    
+    scroll-behavior: smooth;
 }
 
 a {
@@ -26,8 +18,18 @@ a {
     text-decoration: none;
 }
 
+body{
+    font-family: var(--font);
+}
 .container{
-    
+    width: 80%;
+    margin: auto;
+}
+
+.btn {
+    width: 100px;
+    border-radius: 10px;
+    padding: 10px 20px;
 }
 
 /*Navbar*/
@@ -35,20 +37,82 @@ header nav {
     display: flex;
     justify-content: space-between;
     padding: 2vh 25vh;
-    font-family: var(--spartan);
 }
 
 header nav .title {
     text-transform: uppercase;
     font-size: 20px;
-    color: var(--primary-color);
+    color: #000;
 }
+
 header nav .sections a{
     padding: 0 1em;
 }
+
 header nav .sections a:hover{
-    color: var(--primary-color2);
+    color: ;
 }
+
+
+
+/*Body*/
+
+/* Introduce my self */
+.home {
+    margin: 20vh 0;
+}
+.home .container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100%;
+}
+
+.home .container .name{
+    margin: auto;
+}
+.home .container .name .bar{
+    width: 100%;
+    font-size: 50px;
+}
+
+.home .container .name .title {
+    font-size: 50px;
+}
+.home .container .name .btns {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em;
+}
+
+.home .container .name .btns .btn1{
+    background: var(--primaryColor);
+    color: #fff;
+    text-align: center;
+    transition: .2s;
+    border: 1px solid var(--primaryColor);
+}
+.home .container .name .btns .btn1:hover {
+    background: #fff;
+    color: var(--primaryColor)
+}
+.home .container .name .btns .btn2{
+    color: var(--primaryColor);
+    text-align: center;
+    transition: .2s;
+    border: 1px solid var(--primaryColor);
+}
+.home .container .name .btns .btn2:hover{
+    background: var(--primaryColor);
+    color: #fff;
+}
+.home .container .image img {
+    width: 100%;
+    margin: auto;
+}
+
+
+/*About me*/
+
 
 
 

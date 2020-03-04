@@ -10,23 +10,45 @@
    
 
     /* font family variables. */ 
-    --roboto: 'Roboto', cursive;
+    --spartan: 'Spartan', sans-serif;
 } 
 
 /* General settings */
+@import url('https://fonts.googleapis.com/css?family=Spartan:400,500,700&display=swap');
 *{
     margin: 0;
     padding: 0;
+    
 }
 
 a {
-    color: var(--text-color);
+    color: #000;
     text-decoration: none;
 }
 
+.container{
+    
+}
 
 /*Navbar*/
+header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh 25vh;
+    font-family: var(--spartan);
+}
 
+header nav .title {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: var(--primary-color);
+}
+header nav .sections a{
+    padding: 0 1em;
+}
+header nav .sections a:hover{
+    color: var(--primary-color2);
+}
 
 
 
